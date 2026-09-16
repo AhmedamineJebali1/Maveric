@@ -102,7 +102,7 @@ export default function Referentiel() {
             <li>Un critère marqué N/A est exclu du numérateur et du dénominateur de la moyenne du module.</li>
             <li>Un N/A choisi manuellement doit être justifié par écrit.</li>
             <li>
-              Tous les critères notés 5 sur un module de coefficient 2 : score plancher de 60 (High). Deux critères
+              Un critère noté 5 sur un module de coefficient 2 : score plancher de 60 (High). Deux critères
               notés 5 sur les modules de coefficient 2 : score plancher de 80 (Very high).
             </li>
           </ul>

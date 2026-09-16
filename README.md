@@ -111,7 +111,7 @@ serveur renvoie les résultats. Aucune formule intermédiaire n'est exposée dan
 | N/A choisi manuellement | Une fenêtre de justification s'ouvre ; la justification est obligatoire |
 | Module 5 | Si « Nombre et gravité des non-conformités » = 1, le plan d'action bascule en N/A sans justification à saisir |
 | Module 6 | Si le nombre d'incidents = 0, les trois critères suivants basculent en N/A |
-| Coefficient 2, tous les critères à 5 | Score plancher de 60 (High) |
+| Coefficient 2, un critère à 5 | Score plancher de 60 (High) |
 | Coefficient 2, deux critères à 5 | Score plancher de 80 (Very high) |
 
 ### Pondérations et seuils

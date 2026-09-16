@@ -155,10 +155,13 @@ export function computeScore(input: {
     const scored = criteriaScores.filter((c) => c.moduleId === module.id && !c.na);
     const fives = scored.filter((c) => c.value === 5);
     fivesAcrossHeavy += fives.length;
-    if (scored.length > 0 && fives.length === scored.length) {
+    // « Si un critère est noté 5 sur un module de coefficient 2 » : plancher de 60.
+    if (fives.length > 0) {
       scoreFinal = Math.max(scoreFinal, 60);
       eliminationRules.push(
-        `Tous les critères notés 5 sur le module ${module.number} (coefficient 2) : score plancher de 60 — classé High.`,
+        fives.length === 1
+          ? `1 critère noté 5 sur le module ${module.number} (coefficient 2) : score plancher de 60 — classé High.`
+          : `${fives.length} critères notés 5 sur le module ${module.number} (coefficient 2) : score plancher de 60 — classé High.`,
       );
     }
   }
